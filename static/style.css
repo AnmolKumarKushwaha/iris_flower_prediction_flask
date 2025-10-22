@@ -1,0 +1,183 @@
+/* ============================
+   Body and Font
+============================ */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper centers the container */
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Titles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #2E8B57;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Inputs */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* ============================
+   Sliders
+============================ */
+input[type=range] {
+    -webkit-appearance: none; /* Chrome, Safari */
+    -moz-appearance: none;    /* Firefox */
+    appearance: none;          /* Standard */
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d4fc79, #96e6a1); /* matches result card */
+    outline: none;
+    transition: 0.3s;
+    margin: 5px 0 5px 0;
+}
+
+/* Webkit Track */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    border-radius: 10px;
+}
+
+/* Webkit Thumb */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #2E8B57;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    margin-top: -6.5px;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    background: #246b46;
+    transform: scale(1.1);
+}
+
+/* Firefox Track */
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    border-radius: 10px;
+}
+
+/* Firefox Thumb */
+input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #2E8B57;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+input[type=range]::-moz-range-thumb:hover {
+    background: #246b46;
+    transform: scale(1.1);
+}
+
+/* Display current value */
+.input-group span {
+    float: right;
+    font-weight: 600;
+    color: #2E8B57;
+}
+
+/* ============================
+   Button
+============================ */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #246b46;
+    transform: scale(1.02);
+}
+
+/* ============================
+   Prediction Card
+============================ */
+.result-card {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.result-card h2 {
+    margin: 0 0 10px;
+    color: #2E8B57;
+}
+
+.result-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1b4332;
+}
+
+/* ============================
+   Fade-in animation
+============================ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
